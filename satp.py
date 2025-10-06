@@ -6,6 +6,10 @@ else:
     attendance_percent = (attended_classes / total_classes) * 100
     print("\nAttendance Report")
     print("-----------------")
-    print(f"Classes Held     : {total_classes}")
-    print(f"Classes Attended : {attended_classes}")
-    print(f"Attendance       : {attendance_percent:.2f}%")
+    print(f"Classes Held: {total_classes}")
+    print(f"Classes Attended: {attended_classes}")
+    print(f"Attendance: {attendance_percent:.2f}%")
+    if attendance_percent >= 75:
+        print("Status:Eligible for exams")
+    else:
+        print("Status:Not eligible for exams")
